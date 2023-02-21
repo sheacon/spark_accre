@@ -1,6 +1,6 @@
 # Spark on ACCRE
 
-This repository provides updated tools for spinning up a Spark cluster and running Spark jobs on ACCRE's traditional HPC cluster via SLURM.
+This repository provides updated code for spinning up a Spark cluster and running Spark jobs on ACCRE's traditional HPC cluster via SLURM.
 
 ## Description
 
