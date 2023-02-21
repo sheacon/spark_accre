@@ -1,21 +1,16 @@
 # Spark on ACCRE
 
-This repository provides tools for spinning up a Spark cluster and 
-running Spark jobs on ACCRE's traditional HPC cluster via SLURM.
+This repository provides updated tools for spinning up a Spark cluster and running Spark jobs on ACCRE's traditional HPC cluster via SLURM.
 
 ## Description
 
-This directory contains an example Spark job launched through SLURM. The 
-job is launched through the SLURM batch script `spark_test.slurm`; this 
-script allocates resources to set up tasks consisting of 
+This directory contains an example Spark job launched through SLURM. The job is launched through the SLURM batch script `spark_test.slurm`; this  script allocates resources to set up tasks consisting of 
 - a client
 - a master 
 - an arbitrary number of workers
-Due to how SLURM is structured, the allocation of each of these processes must be
-homogeneous, which is slightly wasteful but easy to understand.
+Due to how SLURM is structured, the allocation of each of these processes must be homogeneous, which is slightly wasteful but easy to understand.
 
-Each process is launched via `srun` where the exectuable for each process
-is specified in the `cluster.conf` file.
+Each process is launched via `srun` where the exectuable for each process is specified in the `cluster.conf` file.
 
 ## Notes
 
