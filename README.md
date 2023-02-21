@@ -15,8 +15,8 @@ Due to how SLURM is structured, the allocation of each of these processes must b
 
 To access the Spark Web UI:
 - After submitting the SLURM job, and it's started...
-- Run `grep 'To tunnel to MasterUI and JobUI' output_spark_test-task-0.out` in the job's directory
-- Run the command in the returned line
+- Run `grep 'To tunnel to MasterUI and JobUI' task0.out` in the job's directory
+- Run the command in the returned line on your local machine
 - Navigate to localhost:8080/ in a browser
 
 ## Credits
