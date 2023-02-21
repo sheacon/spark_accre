@@ -1,13 +1,13 @@
 #!/bin/bash
 
 #SBATCH --job-name=spark_test
-#SBATCH --output=slurm.out
-#SBATCH --error=slurm.err
+#SBATCH --output=output_%x.out
+#SBATCH --error=error_%x.err
 
 #SBATCH --ntasks=4
-#SBATCH --cpus-per-task=2
+#SBATCH --cpus-per-task=4
 #SBATCH --time=00:15:00
-#SBATCH --mem-per-cpu=2G
+#SBATCH --mem-per-cpu=4G
 #SBATCH --constraint=skylake|cascadelake
 
 #SBATCH --account=p_dsi
@@ -62,7 +62,7 @@ cluster_conf+=$"2-$LAST_PROC      ./task-roles.sh WORKER"
 echo -e $cluster_conf > cluster.conf
 
 # run job
-srun -l -o task%t.out -e task%t.err --multi-prog cluster.conf
+srun -l -o output_%x-task-%t.out -e error_%x-task-%t.err --multi-prog cluster.conf
 
 
 
