@@ -1,8 +1,7 @@
-#spark_test
+# Spark on ACCRE
 
-Run Spark jobs on ACCRE's traditional HPC cluster via SLURM.
-
-Adapted from: https://bigdata-vandy.github.io/using-spark-with-gpfs/
+This repository provides tools for spinning up a Spark cluster and 
+running Spark jobs on ACCRE's traditional HPC cluster via SLURM.
 
 ## Description
 
@@ -18,9 +17,12 @@ homogeneous, which is slightly wasteful but easy to understand.
 Each process is launched via `srun` where the exectuable for each process
 is specified in the `cluster.conf` file.
 
-## Note
+## Notes
 
 To access the Spark Web UI:
 - Run `grep 'To tunnel to MasterUI and JobUI' output_spark_test-task-0.out`
 - Run the command in the returns line
 - Navigate to localhost:8080/ in a browser
+
+## Credits
+Adapted from: https://bigdata-vandy.github.io/using-spark-with-gpfs/
