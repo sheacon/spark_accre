@@ -20,6 +20,7 @@ is specified in the `cluster.conf` file.
 ## Notes
 
 To access the Spark Web UI:
+- After submitting the SLURM job, and it's started...
 - Run `grep 'To tunnel to MasterUI and JobUI' output_spark_test-task-0.out`
 - Run the command in the returns line
 - Navigate to localhost:8080/ in a browser
