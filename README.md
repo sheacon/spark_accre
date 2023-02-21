@@ -9,9 +9,7 @@ This directory contains an example Spark job launched through SLURM. The job is 
 - a master 
 - an arbitrary number of workers
 
-Due to how SLURM is structured, the allocation of each of these processes must be homogeneous, which is slightly wasteful but easy to understand.
-
-Each process is launched via `srun` where the exectuable for each process is specified in the `cluster.conf` file.
+Due to how SLURM is structured, the allocation of each of these processes must be homogeneous, which is slightly wasteful but easy to understand. Each process is launched via `srun` where the exectuable for each process is specified in the `cluster.conf` file.
 
 ## Notes
 
