@@ -10,9 +10,9 @@
 #SBATCH --mem-per-cpu=2G
 #SBATCH --constraint=skylake|cascadelake
 
-#SBATCH --account=p_dsi
-#SBATCH --partition=production
-#SBATCH --mail-user=shea.conaway@vanderbilt.edu
+##SBATCH --account=p_dsi
+##SBATCH --partition=production
+##SBATCH --mail-user=
 #SBATCH --mail-type=ALL
 #SBATCH --export=ALL
 
